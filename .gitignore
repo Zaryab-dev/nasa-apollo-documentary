@@ -1,0 +1,4 @@
+outputs/temp_dl/
+*.log
+__pycache__/
+.ipynb_checkpoints/

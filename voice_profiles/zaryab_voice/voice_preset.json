@@ -1,0 +1,22 @@
+{
+  "name": "Zaryab-Voice",
+  "id": "zaryab_voice",
+  "archetype": "Cinematic Investigative Storyteller (Deliberate Suspense)",
+  "description": "Warm, grounded 30yo American male baritone with razor-sharp diction, spacious dramatic pauses, mounting historical suspense, and broadcast-mastered acoustic presence.",
+  "engine": "Breeze-TTS-2",
+  "seed": 101,
+  "cfg_scale": 4.5,
+  "tempo_multiplier": 0.94,
+  "sample_rate": 24000,
+  "channels": 1,
+  "instruction": "A compelling, charismatic 30-year-old male narrator with a warm, grounded baritone voice, delivering dramatic documentary history with fast, forward-moving momentum, articulate diction, sharp consonants, and subtle suspense.",
+  "reference_audio": "zaryab_voice_reference.wav",
+  "reference_text": "zaryab_voice_reference.txt",
+  "post_processing": {
+    "tempo": 0.94,
+    "pitch_preserved": true,
+    "ffmpeg_filter": "atempo=0.94,loudnorm=I=-16:TP=-1.5:LRA=11",
+    "target_lufs": -16.0,
+    "true_peak_dbtp": -1.5
+  }
+}

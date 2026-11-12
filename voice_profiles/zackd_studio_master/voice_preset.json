@@ -1,0 +1,20 @@
+{
+  "name": "Zack D. Films - 1.25x Studio Clone Master",
+  "id": "zackd_studio_master_125",
+  "speaker_identity": "Zack D. Films (Male, Crisp, Articulate Narrator)",
+  "reference_audio": "ref_audio.wav",
+  "reference_text": "ref_text.txt",
+  "sample_rate": 24000,
+  "channels": 1,
+  "inference_mode": "ref_clone_tata",
+  "instruction": null,
+  "cfg_scale": 4.0,
+  "seed": 42,
+  "post_processing": {
+    "tempo_multiplier": 1.25,
+    "pitch_preserved": true,
+    "ffmpeg_filter": "atempo=1.25,loudnorm=I=-16:TP=-1.5:LRA=11",
+    "target_lufs": -16.0
+  },
+  "description": "Crisp, deliberate male narrator timbre accelerated by 25% (1.25x tempo) to achieve ideal documentary pacing without pitch distortion, completed with broadcast-standard loudness normalization."
+}
